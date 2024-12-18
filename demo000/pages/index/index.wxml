@@ -1,0 +1,4 @@
+<!--pages/index/index.wxml-->
+<view>
+  <text>首页,请开始您的内容</text>
+</view>
