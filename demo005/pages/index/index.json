@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "renCalendar": "/components/renCalendar/index"
+  }
+}

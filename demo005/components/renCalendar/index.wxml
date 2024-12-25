@@ -1,0 +1,40 @@
+<!--components/renCalendar/index.wxml-->
+<!--
+01) 短路操作简化class赋值: class="content {{!monthOpen&&'hide'}}";  返回:false或者 hide
+02) 调试属性: data-test-height="{{height}}"
+03)
+-->
+<view>
+  <button type="primary" size="mini" bindtap="onTapFei001"> 触发自己的 事件</button>
+</view>
+
+<view class="calendar-wrapper">
+  <view class="header" wx:if="{{headerBar}}">
+    <view class="pre" bindtap="changeMonth" data-type="pre">上个月</view>
+    <view>{{ y+'年'+m+'月' }}</view>
+    <view class="next" bindtap="changeMonth" data-type="next">下个月</view>
+  </view>
+
+  <view class="week">
+    <view class="week-day" wx:for="{{weekDay}}" wx:for-item="item" wx:key="index">{{item}}</view>
+  </view>
+
+  <view class="content {{!monthOpen&&'hide'}}" data-test-height="{{height}}" style="height:{{height}}">
+    <view class="days" style="top:{{positionTop}}rpx">
+      <view class="item" wx:for="{{dates}}" wx:key="index" wx:for-item="item">
+        <view
+          class="day {{choose===item.dateFormat&&'choose'}} {{!item.isCurM&&'nolm'}} {{item.isToday&&'today'}} {{item.isWorkDay&&'isWorkDay'}}"
+          data-item="{{item}}"
+          bindtap="selectOne"
+        >
+          {{item.date*1}}
+        </view>
+        <view class="markDay" wx:if="{{item.isMarkDay&&item.isCurM}}"></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="weektoggle {{monthOpen&&'down'}}">
+    <text bindtap="toggle">V</text>
+  </view>
+</view>

@@ -1,0 +1,160 @@
+.calendar-wrapper {
+  color: #bbb7b7;
+  font-size: 28rpx;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 10rpx;
+}
+.calendar-wrapper .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88rpx;
+  color: #42464a;
+  font-size: 32rpx;
+  font-weight: bold;
+  border-bottom: 2rpx solid #f2f2f2;
+}
+.calendar-wrapper .header .pre {
+  color: #4d7df9;
+  font-size: 28rpx;
+  font-weight: normal;
+  padding: 8rpx 15rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid #dcdfe6;
+  margin-right: 30rpx;
+}
+.calendar-wrapper .header .next {
+  color: #4d7df9;
+  font-size: 28rpx;
+  font-weight: normal;
+  padding: 8rpx 15rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid #dcdfe6;
+  margin-left: 30rpx;
+}
+
+.calendar-wrapper .week {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid rgba(255, 255, 255, 0.2);
+}
+.calendar-wrapper .week .week-day {
+  flex: 1;
+}
+
+.calendar-wrapper .hide {
+  height: 80rpx !important;
+}
+
+.calendar-wrapper .weektoggle {
+  width: 45rpx;
+  height: 32rpx;
+  position: relative;
+  bottom: -29rpx;
+
+  left: 45%;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: #dcdfe6;
+
+  /*border: 1px solid #07c160;*/
+  /*background-color: #07c160;*/
+  /*color: #ffffff;*/
+}
+.calendar-wrapper .weektoggle.down {
+  transform: rotate(180deg);
+  bottom: 0;
+}
+
+/* ======== */
+
+.calendar-wrapper .content {
+  position: relative;
+  overflow: hidden;
+  transition: height 0.4s ease;
+}
+.calendar-wrapper .content .days {
+  transition: top 0.3s;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.calendar-wrapper .content .days .item {
+  position: relative;
+  display: block;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: calc(100% / 7);
+}
+
+.calendar-wrapper .content .days .item .day {
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  overflow: hidden;
+  border-radius: 60rpx;
+}
+
+.calendar-wrapper .content .days .item .day.choose {
+  background-color: #4d7df9;
+  color: #fff;
+}
+
+/** ==不是当月数据  */
+.calendar-wrapper .content .days .item .day.nolm {
+  color: #fff;
+  opacity: 0.3;
+}
+
+.calendar-wrapper .content .days .item .isWorkDay {
+  color: #42464a;
+}
+
+.calendar-wrapper .content .days .item .notSigned {
+  font-style: normal;
+  width: 8rpx;
+  height: 8rpx;
+  background: #fa7268;
+  border-radius: 10rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.calendar-wrapper .content .days .item .today {
+  color: #fff;
+  background-color: #a8c0ff;
+}
+
+.calendar-wrapper .content .days .item .workDay {
+  font-style: normal;
+  width: 8rpx;
+  height: 8rpx;
+  background: #4d7df9;
+  border-radius: 10rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.calendar-wrapper .content .days .item .markDay {
+  font-style: normal;
+  width: 8rpx;
+  height: 8rpx;
+  background: #fc7a64;
+  border-radius: 10rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  pointer-events: none;
+}
