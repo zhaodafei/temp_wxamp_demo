@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="home-page">
+  <view class="fei">首页</view>
+  <view>内容</view>
+  <view class="body">
+    <view class="content">首页内容-模板</view>
+  </view>
+</view>
+
