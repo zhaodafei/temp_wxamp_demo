@@ -1,9 +1,7 @@
-<!--index.wxml-->
+
 <view class="home-page">
-  <view class="fei">首页</view>
-  <view>内容</view>
-  <view class="body">
-    <view class="content">首页内容-模板</view>
-  </view>
+  <view style="text-align: center;margin-bottom: 100rpx"> 点击新能源可以切换 </view>
+
+  <VehicleKeyboard bind:setCarNum="getCarNum" />
 </view>
 

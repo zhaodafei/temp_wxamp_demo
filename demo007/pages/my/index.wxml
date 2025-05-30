@@ -1,6 +1,12 @@
 <view class="my-page">
-  <view class="title">我的页面</view>
-  <view class="fei">
-    <view class="bar">描述</view>
+
+  <view class="container">
+    <view>
+      <button type="primary" class="btn" bindtap="inputCarNum">输入车牌号</button>
+    </view>
+
+    <block wx:if="{{showKeyboard}}">
+      <VehicleKeyboard2 bind:onOk="onOk" bind:onCancel="onCancel"/>
+    </block>
   </view>
 </view>

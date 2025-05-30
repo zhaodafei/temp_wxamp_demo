@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "VehicleKeyboard": "/components/vehicle-keyboard/index"
   },
   "navigationBarTitleText": "首页"
 }

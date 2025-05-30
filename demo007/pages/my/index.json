@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "VehicleKeyboard2": "/components/vehicle-keyboard2/index"
+  },
   "navigationBarTitleText": "我的"
 }
