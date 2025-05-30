@@ -1,0 +1,59 @@
+.container {
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  .tab-title {
+    width: 100%;
+    height: 88rpx;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .titleUnSel {
+      color: #858fab;
+      font-size: 26rpx;
+    }
+  
+    .titleSel {
+      color: #ff6b81;
+      font-size: 32rpx;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      height: 80rpx;
+      line-height: 80rpx;
+    }
+    .titleSel:after {
+      // 选中
+      content: '';
+      display: block;
+      height: 8rpx;
+      width: 52rpx;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      background: #ff6b81;
+      border-radius: 16rpx;
+      transform: translate(-50%, 0%);
+    }
+  }
+  
+  .swiper {
+    background-color: #f5f6fa;
+    width: 100%;
+    flex: 1;
+    height: 100vh;
+    overflow: scroll;
+  
+    .recordItem {
+      background-color: white;
+      margin-top: 10rpx;
+      padding: 20rpx;
+    }
+  }
+  

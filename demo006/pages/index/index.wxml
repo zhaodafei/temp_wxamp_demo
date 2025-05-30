@@ -1,0 +1,37 @@
+<view class="container">
+  <!--Tab布局-->
+  <view class="tab-title">
+    <view class="{{currentIndex==0?'titleSel':'titleUnSel'}}" bindtap="titleClick" data-idx="0">
+      <text>第一个选项</text>
+    </view>
+
+    <view class="{{currentIndex==1?'titleSel':'titleUnSel'}}" bindtap="titleClick" data-idx="1">
+      <text>第二个选项</text>
+    </view>
+
+    <view class="{{currentIndex==2?'titleSel':'titleUnSel'}}" bindtap="titleClick" data-idx="2">
+      <text>第三个选项</text>
+    </view>
+  </view>
+
+  <!--内容布局-->
+  <view>
+    <swiper class="swiper" bindchange="pageChange" current="{{currentIndex}}">
+      <swiper-item class="swiper">
+        <view wx:for="{{firstList}}" wx:key="index" class="recordItem">
+          <view class="name">第一个：{{item}}</view>
+        </view>
+      </swiper-item>
+      <swiper-item class="swiper">
+        <view wx:for="{{secondList}}" wx:key="index" class="recordItem">
+          <view class="name">第二个：{{item}}</view>
+        </view>
+      </swiper-item>
+      <swiper-item class="swiper">
+        <view wx:for="{{secondList}}" wx:key="index" class="recordItem">
+          <view class="name">第3个：{{item}}</view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

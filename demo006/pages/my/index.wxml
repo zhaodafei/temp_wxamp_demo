@@ -1,0 +1,39 @@
+<view>
+  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+    <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="switchNav">健康</view>
+    <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="switchNav">情感</view>
+    <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="switchNav">职场33333</view>
+    <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="switchNav">育儿</view>
+    <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="switchNav">纠纷</view>
+    <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="switchNav">青葱</view>
+    <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="switchNav">全部</view>
+    <view class="tab-item {{currentTab==7?'active':''}}" data-current="7" bindtap="switchNav">其他</view>
+  </scroll-view>
+
+  <swiper
+    class="tab-content"
+    current="{{currentTab}}"
+    duration="300"
+    bindchange="switchTab"
+    style="height:{{winHeight}}rpx"
+  >
+    <swiper-item wx:for="{{[0,1,2,3,4,5,6,7]}}" wx:key="*this">
+      <scroll-view scroll-y="true" class="scoll-h">
+        <block wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key="*this">
+          <view class="item-ans">
+            <view class="avatar">
+              <image class="img" src="{{avatar}}"></image>
+              <image class="doyen" src="{{avatar}}"></image>
+            </view>
+            <view class="expertInfo">
+              <view class="name">大飞</view>
+              <view class="tag">前端-小菜鸟</view>
+              <view class="answerHistory">134个问题，2234次回复解答 </view>
+            </view>
+            <navigator url="/pages/index/index" class="askBtn">详情</navigator>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>
