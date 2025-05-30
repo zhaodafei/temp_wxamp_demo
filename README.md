@@ -14,8 +14,8 @@
 3. `demo003` 语言切换???
 4. `demo004` 网络请求 ???
 5. `demo005` 基础日历
-6. `demo006` xxx
-7. `demo007` xxx
+6. `demo006` 选项卡
+7. `demo007` 车牌号
 8. `demo008` xxx
 9. `demo009` xxx
 10. `demo010` xxx
