@@ -1,12 +1,6 @@
 {
-  "projectname": "基础模板demo000",
-  "libVersion": "trial",
-  "appid": "wx21d7fd82126cf9d3",
   "compileType": "miniprogram",
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
+  "libVersion": "trial",
   "setting": {
     "coverView": true,
     "es6": true,
@@ -19,11 +13,18 @@
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
+    },
+    "ignoreUploadUnusedFiles": true
   },
   "condition": {},
   "editorSetting": {
     "tabIndent": "auto",
     "tabSize": 2
-  }
+  },
+  "appid": "wx21d7fd82126cf9d3",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "projectname": "基础模板demo000"
 }

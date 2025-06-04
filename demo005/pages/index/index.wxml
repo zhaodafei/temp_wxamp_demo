@@ -5,8 +5,18 @@
 
   <view>选中日期: {{curDate}}</view>
 
+<view></view>
+  <view class="btn-circle">
+    <view  class="fei">∧</view>
+  </view>
+
+  <view class="btn-circle2">
+    <view>∧</view>
+  </view>
+
   <view style="margin-top: 100rpx">
     <view>该日历功能参考: https://github.com/AR1N/uniapp-calendar </view>
     <view>其他参考: https://ext.dcloud.net.cn/plugin?id=1795 </view>
   </view>
+
 </view>

@@ -3,5 +3,6 @@
   "projectname": "demo001",
   "setting": {
     "compileHotReLoad": true
-  }
+  },
+  "libVersion": "development"
 }
