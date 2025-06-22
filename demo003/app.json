@@ -4,7 +4,7 @@
     "pages/my/index"
   ],
   "window": {
-    "navigationBarTitleText": "fei基础模板demo000_01",
+    "navigationBarTitleText": "fdemo003语言切换",
     "navigationBarTextStyle": "black",
     "navigationBarBackgroundColor": "#ffffff"
   },
@@ -16,16 +16,16 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "text": "首页",
         "pagePath": "pages/index/index",
-        "iconPath": "/static/image/icon_component.png",
-        "selectedIconPath": "/static/image/icon_component_HL.png"
+        "iconPath": "static/image/icon_component.png",
+        "selectedIconPath": "static/image/icon_component_HL.png",
+        "text": "首页"
       },
       {
-        "text": "我的",
         "pagePath": "pages/my/index",
-        "iconPath": "/static/image/icon_API.png",
-        "selectedIconPath": "/static/image/icon_API_HL.png"
+        "iconPath": "static/image/icon_API.png",
+        "selectedIconPath": "static/image/icon_API_HL.png",
+        "text": "我的"
       }
     ]
   },

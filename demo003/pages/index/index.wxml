@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="home-page">
+  <view class="fei">首页</view>
+  <view>内容</view>
+  <view class="body">
+    <button type="primary" bind:tap="changeLang">切换语言</button>
+  </view>
+  <view>
+  语言内容: {{tCom.title}}
+  </view>
+</view>
+

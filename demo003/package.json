@@ -1,0 +1,7 @@
+{
+  "name": "demo003_language",
+  "version": "1.0.0",
+  "dependencies": {
+    "miniprogram-i18n-plus": "^0.3.0"
+  }
+}

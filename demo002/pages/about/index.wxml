@@ -1,0 +1,6 @@
+<view class="my-page">
+  <view class="title">关于我们</view>
+  <view class="fei">
+    <view class="bar">描述</view>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+<view
+  class="tab-bar {{iPhoneX?'_iPhoneX':''}}"
+  style="background-color:{{backgroundColor}}"
+>
+  <view class="special-wrapper-border"></view>
+  <block wx:for="{{list}}" wx:key="index">
+    <view
+      wx:if="{{item.isSpecial}}"
+      class="tab-bar-nav"
+      hover-class="none"
+      url="{{item.pagePath}}"
+      style="color:{{selected === index ? selectedColor : color}}"
+      data-path="{{item.pagePath}}"
+      data-index="{{index}}"
+      bindtap="switchTab"
+    >
+      <view class="special-wrapper">
+        <image class="tab-bar-icon" src="{{item.iconPath}}"></image>
+      </view>
+      <image class="special-text-wrapper"></image>
+      <text> {{item.text}}</text>
+    </view>
+
+    <view
+      wx:else
+      class="tab-bar-nav"
+      hover-class="none"
+      data-path="{{item.pagePath}}"
+      data-index="{{index}}"
+      style="color:{{selected === index ? selectedColor : color}}"
+      bindtap="switchTab"
+    >
+      <image
+        class="tab-bar-icon"
+        src="{{selected === index ? item.selectedIconPath : item.iconPath}}"
+      ></image>
+      <text>{{item.text}}</text>
+    </view>
+  </block>
+</view>

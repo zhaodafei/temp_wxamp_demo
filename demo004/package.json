@@ -1,0 +1,7 @@
+{
+  "name": "http_fei",
+  "version": "1.0.0",
+  "dependencies": {
+    "miniprogram-api-promise": "^1.0.4"
+  }
+}
