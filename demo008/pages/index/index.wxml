@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="home-page">
+  <view class="fei">弹窗使用</view>
+  <view>内容</view>
+  <view class="body">
+    <button type="primary" bindtap="handelDialog">点击打开弹窗</button>
+  </view>
+
+  <WidgetDialog wx:if="{{dialogShow}}" height="700" isShow="{{dialogShow}}" bind:onAction="onAction">
+        <view slot="headerText">隐私条款提示</view>
+        <view slot="bodyText">这里是插入到组件slot中的内容</view>
+    </WidgetDialog>
+</view>
+

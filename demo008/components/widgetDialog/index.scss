@@ -1,0 +1,64 @@
+page {
+}
+.wgt-dialog-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.wgt-dialog-wrapper .wgt-dialog-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 80%;
+  height: 500rpx;
+  background: #fff;
+  text-align: center;
+  border-radius: 16rpx;
+  margin: auto;
+  box-shadow: 0px 2px 6px 0px rgba(201, 201, 201, 0.4);
+}
+
+.wgt-body {
+  height: 500rpx;
+}
+.header {
+  font-weight: 600;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.body {
+  height: 295rpx;
+  overflow-y: scroll;
+  color: rgba(0, 0, 0, 0.45);
+  padding: 0 30rpx;
+}
+
+.footer {
+  height: 105rpx;
+  line-height: 105rpx;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1rpx solid rgba(201, 201, 201, 0.4);
+}
+.footer .cancel,
+.confirm {
+  width: 50%;
+  font-weight: 600;
+}
+
+.confirm {
+  color: #576b95;
+}
+
+.center-line {
+  height: 100%;
+  width: 2rpx;
+  background-color: rgba(201, 201, 201, 0.4);
+}

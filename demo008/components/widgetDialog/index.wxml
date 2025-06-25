@@ -1,0 +1,18 @@
+<!--<view> dialog 弹窗 overlay</view>-->
+<view class="wgt-dialog-wrapper" wx:if="{{show}}">
+  <view class="wgt-dialog-overlay" style="height:{{overlayHeight}}">
+    <view class="wgt-body" style="height:{{overlayHeight}}">
+      <view class="header">
+        <slot name="headerText"></slot>
+      </view>
+      <view class="body" style="height:{{bodyHeight}}">
+        <slot name="bodyText"></slot>
+      </view>
+      <view class="footer">
+        <view class="cancel" bindtap="handleCancel"> 取消 </view>
+        <view class="center-line"></view>
+        <view class="confirm" bindtap="handleConfirm"> 确定 </view>
+      </view>
+    </view>
+  </view>
+</view>

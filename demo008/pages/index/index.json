@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "WidgetDialog": "/components/widgetDialog/index"
+  },
+  "navigationBarTitleText": "首页"
+}
