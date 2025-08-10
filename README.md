@@ -16,8 +16,8 @@
 5. `demo005` 基础日历
 6. `demo006` 选项卡
 7. `demo007` 车牌号
-8. `demo008` xxx
-9. `demo009` xxx
+8. `demo008` 简单dialog弹窗
+9. `demo009` 自定义`nav`
 10. `demo010` xxx
 11. `demo011` xxx
 12. `demo012` xxx

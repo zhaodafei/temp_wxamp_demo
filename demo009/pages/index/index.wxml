@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<navigation-bar title="自定义标题" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+
+<view class="home-page">
+  <view class="fei">首页</view>
+  <view>
+  <button type="primary" bindtap="toChildPage">点击我到子页面</button>
+  </view>
+  <view class="body">
+    <view>navigation-bar 里面内容有时间可以优化一下 </view>
+    <view>代码来源: https://developers.weixin.qq.com/miniprogram/dev/component/selection.html </view>
+  </view>
+</view>
+

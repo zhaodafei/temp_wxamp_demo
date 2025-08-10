@@ -1,0 +1,4 @@
+<navigation-bar title="自定义标题B" back="{{false}}" homeButton="{{true}}" color="black" background="#FFF"></navigation-bar>
+<view>
+  我是二级页面
+</view>
